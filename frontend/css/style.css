@@ -1,0 +1,48 @@
+body, html {
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Container for splash */
+#splash-screen {
+  text-align: center;
+  animation: zoomFade 2s ease-in-out 0.3s forwards;
+}
+
+/* Logo image style */
+#logo {
+  width: 30vw;              /* 30% of the viewport width */
+  max-width: 300px;         /* But never larger than 300px */
+  min-width: 150px;         /* Never smaller than 150px */
+  animation: spin 1.5s ease-out;
+}
+
+
+/* Zoom + fade-in effect */
+@keyframes zoomFade {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Spin-in effect */
+@keyframes spin {
+  0% {
+    transform: rotate(-360deg) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}
