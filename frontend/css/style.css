@@ -6,8 +6,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-
 /* Container for splash */
 #splash-screen {
   text-align: center;
@@ -43,7 +41,6 @@ body {
     opacity: 1;
   }
 }
-<<<<<<< HEAD
 .box{
   width:200px;
   max-width:400%;
@@ -57,6 +54,3 @@ body {
   }
   
 }
-=======
-
->>>>>>> 3d2eca8aa25f4abe1440d3b872f63fe4782bac2f
