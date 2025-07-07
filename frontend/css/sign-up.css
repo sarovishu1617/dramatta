@@ -1,0 +1,60 @@
+body{
+    background-color:rgb(40, 39, 39);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box2{
+     border: 5px solid rgb(21, 19, 19);
+    color:rgb(176, 23, 23);
+    padding: 30px;
+    padding-bottom:30px;
+    box-shadow:30px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.out{
+    color:rgb(211, 202, 192);
+
+}
+button{
+     border-radius: 25px;
+    color:whitesmoke;
+    box-sizing: content-box;
+    box-shadow: 30;
+    margin: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    width:70px;
+    text-align: center;
+    height: 20px;
+    background-color:rgb(199, 30, 30);
+}
+a{
+color:rgb(172, 172, 222);
+    font-size:13px;
+}
+.group{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+justify-content: flex-start;
+}
+.group label{
+width:120px;
+font-weight: bold;
+color:red;
+}
+.group input{
+ flex:1;
+ padding:5px;
+ border:1px solid #121111;
+ border-radius:3px;
+}
+.sign{
+    color:rgb(224, 32, 32);
+}
+
