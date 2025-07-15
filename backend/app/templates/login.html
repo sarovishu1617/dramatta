@@ -1,0 +1,29 @@
+<!-- templates/login.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>LOGIN</h1>
+        <form method="POST" action="/login">
+            <div class="group">
+                <label>Email:</label>
+                <input type="text" name="email" placeholder="Enter email" required>
+            </div>
+            <div class="group">
+                <label>Password:</label>
+                <input type="password" name="password" placeholder="Enter password" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="input">
+            <p>{{ error }}</p>
+        </div>
+        <a href="#">Forget Password?</a><br>
+        <a href="#">Create new account</a>
+    </div>
+</body>
+</html>
