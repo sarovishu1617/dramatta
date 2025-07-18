@@ -1,0 +1,53 @@
+body{
+    margin-top:50px;
+    padding:20px;
+    background-color: black;
+    border:1.5px solid red;
+    border-radius:15px;
+    box-shadow: 11px;
+    width: fit-content;
+    margin-left:35%;
+    text-align: center;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    color:white;
+    border: 1.5px solid rgb(143, 80, 80);
+    background-color:black;
+    border-radius:2px;
+    width:70%;
+    margin-left:50px;
+    box-shadow:4px;
+}
+.products{
+     margin: 12px;
+     padding :10px;
+     color:red;
+     text-align:left;
+     cursor:pointer;
+     box-shadow:4px;
+     font-size: large;
+     display:flex;
+     justify-items: center;
+     flex-direction:column;
+      justify-content: center;
+    }
+button{
+    color:black;
+    background-color: rgb(152, 173, 192);
+    box-shadow:4px;
+    border: 2px solid red;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.products input{
+     width: 200px;
+}
+a{
+    color:antiquewhite;
+    border: 2px solid black;
+    border-radius: 0cap;
+    margin-left: 40px;
+}

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from flask import Flask, request, render_template, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 
@@ -58,5 +59,31 @@ def signup():
     return render_template('signup.html')
 
 # Step 7: Run the app
+=======
+from flask import Flask, render_template, request, redirect, url_for
+
+app = Flask(__name__)
+
+# Dummy user for testing
+users = {
+    "test@example.com": "1234",  # email: password
+}
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        email = request.form['email']
+        password = request.form['password']
+
+        # Authentication logic
+        if email in users and users[email] == password:
+            return render_template('success.html', email=email)
+        else:
+            error = "Invalid email or password"
+            return render_template('login.html', error=error)
+
+    return render_template('login.html')
+
+>>>>>>> e57f2f12682a76bbbe5fa33253e8e50340e31cd2
 if __name__ == '__main__':
     app.run(debug=True)
