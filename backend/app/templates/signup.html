@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up | Dramatta</title>
+    <link rel="stylesheet" href="../static/sign-up.css">
+</head>
+<body>
+    <center>
+        <div class="box2">
+            <h1 class="out"><b>WELCOME TO DRAMATTA</b></h1>
+            <h1>Sign-Up</h1>
+            <form method="POST" action="/signup">
+                <div class="group">
+                    <label>Username:</label>
+                    <input type="text" name="name" placeholder="Enter name" required>
+                </div>
+
+                <div class="group">
+                    <label>User e-mail:</label>
+                    <input type="text" name="email" placeholder="Enter email" required>
+                </div>
+
+                <div class="group">
+                    <label>Password:</label>
+                    <input type="password" name="password" placeholder="Enter password" required>
+                </div>
+
+                <div class="group">
+                    <label>Mobile number:</label>
+                    <input type="text" name="number" placeholder="Enter number" required>
+                </div>
+
+                <button type="submit">Sign-In</button>
+            </form>
+            <br>
+            <p>
+                <a href="#">Already have an account |</a>
+                <a class="sign" href="{{ url_for('login') }}">Login</a>
+            </p>
+        </div>
+    </center>  
+</body>
+</html>

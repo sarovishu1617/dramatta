@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login |Dramatta </title>
+    <link rel="stylesheet" href="../static/login.css">
+</head>
+<body>
+<center>
+     <div class="container">
+    <h1 text-align="center"><b>LOGIN</b></h1>
+    <form method="POST" action="/">
+        <div class="group">
+        <label>User e-mail:</label>
+        <input type="e-mail" name = 'email' required id="text"placeholder="Enter email"required>
+        </div>
+        <div class="group">
+            <label>Password:</label>
+            <input type="password"name="Password" required placeholder="Enter Password"required>
+            </div>
+            <button type="submit">submit</button>
+         
+            
+            <a href="">Forget Password?</a>
+            
+            <br>
+       
+            <a href="{{ url_for('signup') }}">Create new account</a>
+
+        </form>
+    </div>
+    </center>
+</body>
+</html>
